@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="22ND SEPTEMBER 2020"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Plane"
+        android:paddingLeft="130dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:orientation="horizontal"
+        android:id="@+id/September"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LHR"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:padding="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/September"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/Plane"
+        app:layout_constraintBottom_toTopOf="@id/London"
+        android:id="@+id/LHR"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LONDON"
+        android:textColor="#808080"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/LHR"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/Plane"
+        android:id="@+id/London"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JFK"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:padding="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/September"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/Plane"
+        app:layout_constraintBottom_toTopOf="@id/New_York"
+        android:id="@+id/JFK"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEW YORK"
+        android:textColor="#808080"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/JFK"
+        app:layout_constraintLeft_toRightOf="@+id/Plane"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/New_York"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plane"
+        app:layout_constraintTop_toBottomOf="@+id/September"
+        app:layout_constraintRight_toLeftOf="@+id/JFK"
+        app:layout_constraintLeft_toRightOf="@+id/LHR"
+        app:layout_constraintBottom_toTopOf="@id/Line1"
+        android:padding="10dp"
+        android:id="@+id/Plane"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_____________________________"
+        android:textColor="#000000"
+        android:textSize="5sp"
+        android:padding="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/Plane"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Name"
+        android:id="@+id/Line1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:textColor="#808080"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/Line1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/My_name"
+        android:id="@+id/Name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MEDER RAZZAKOV"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/Name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Null1"
+        android:id="@+id/My_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FLIGHT"
+        android:textColor="#808080"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/My_name"
+        app:layout_constraintRight_toLeftOf="@+id/Null1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/Flight"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEAT"
+        android:textColor="#808080"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/My_name"
+        app:layout_constraintLeft_toRightOf="@+id/Null1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/Seat"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="5sp"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/My_name"
+        app:layout_constraintLeft_toLeftOf="@+id/My_name"
+        app:layout_constraintRight_toRightOf="@+id/My_name"
+        android:id="@+id/Null1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="5sp"
+        android:padding="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/Null1"
+        app:layout_constraintLeft_toRightOf="@+id/Flight"
+        app:layout_constraintRight_toLeftOf="@+id/Seat"
+        app:layout_constraintBottom_toTopOf="@id/Line2"
+        android:id="@+id/Null2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VA301"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/Flight"
+        app:layout_constraintRight_toLeftOf="@+id/Null2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/VA301"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25A"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/Seat"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/Null2"
+        android:id="@+id/Seat_number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="___________________"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Null2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/Line2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="10sp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/Line2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Null4"
+        android:id="@+id/Null3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="                              "
+        android:textColor="#000000"
+        android:textSize="10sp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/Null3"
+        app:layout_constraintLeft_toRightOf="@id/Time1"
+        app:layout_constraintRight_toLeftOf="@id/Time2"
+        app:layout_constraintBottom_toBottomOf="@id/Null5"
+        android:id="@+id/Null4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="            "
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/Null4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Line3"
+        android:id="@+id/Null5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEPARTS"
+        android:textColor="#808080"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/Null4"
+        app:layout_constraintBottom_toTopOf="@id/Time1"
+        app:layout_constraintTop_toBottomOf="@id/Line2"
+        android:id="@+id/Departs"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ARRIVES"
+        android:textColor="#808080"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Line2"
+        app:layout_constraintBottom_toTopOf="@+id/Time2"
+        app:layout_constraintLeft_toRightOf="@id/Null4"
+        android:id="@+id/Arrives"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15:40"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/Departs"
+        app:layout_constraintRight_toLeftOf="@+id/Null5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/Time1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="19:30"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/Arrives"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/Null5"
+        android:id="@+id/Time2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---------------------------------------------"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        android:padding="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/Null5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/Code"
+        android:id="@+id/Line3"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/code"
+        app:layout_constraintTop_toBottomOf="@+id/Line3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="0dp"
+        android:id="@+id/Code"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
